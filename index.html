@@ -17,7 +17,7 @@
 <section class="wrap section"><div class="admin"><div class="eyebrow">FULFILLMENT DESK</div><h2>รายการหยิบสินค้า & ใบแพ็ค</h2><p class="muted">โหลดคำสั่งซื้อจาก Google Sheets แล้วพิมพ์รายการเพื่อตรวจสอบก่อนจัดส่ง</p><div class="adminrow"><input id="adminKey" placeholder="รหัสผู้ดูแล"><button class="btn" onclick="loadOrders()">โหลดคำสั่งซื้อ</button><button class="btn alt" onclick="window.print()">พิมพ์ใบหยิบ / แพ็ค</button></div><div class="orders" id="orders"><p class="muted">ยังไม่ได้โหลดรายการคำสั่งซื้อ</p></div></div></section>
 </main><footer class="wrap">© 2026 BRUSHO · Smile every day</footer><div id="toast" class="toast"></div>
 <script>
-const SCRIPT_URL=''; // ใส่ Google Apps Script Web App URL ที่นี่
+const SCRIPT_URL='https://script.google.com/macros/s/AKfycbyl_g2AqASFnwShr_OfmX0qOn48IPIoqifswGv3cqWBFAY9QK5GRRwZIPD2JJCB0rJesQ/exec';
 const P={'BR-01':{name:'BRUSHO Soft Daily',price:89},'BR-02':{name:'BRUSHO Charcoal Care',price:129}};
 function toast(s){let t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',3500)}
 function choose(s){document.getElementById('sku').value=s;document.getElementById('order').scrollIntoView({behavior:'smooth'})}
